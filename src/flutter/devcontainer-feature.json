@@ -6,5 +6,13 @@
     "containerEnv": {
         "FLUTTER_ROOT": "/usr/local/flutter",
         "PATH": "/usr/local/flutter/bin:${PATH}"
+    },
+    "options" : {
+        "channel" : {
+            "type" : "string",
+            "enum" : ["stable","dev","beta"],
+            "default" : "stable",
+            "description" : "Flutter channel"
+        }
     }
 }
