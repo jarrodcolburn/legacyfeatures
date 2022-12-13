@@ -7,12 +7,21 @@
         "FLUTTER_ROOT": "/usr/local/flutter",
         "PATH": "/usr/local/flutter/bin:${PATH}"
     },
-    "options" : {
-        "channel" : {
-            "type" : "string",
-            "enum" : ["stable","beta","master"],
-            "default" : "stable",
-            "description" : "Flutter channel"
+    "options": {
+        "channel": {
+            "type": "string",
+            "enum": [
+                "stable",
+                "beta",
+                "master"
+            ],
+            "default": "stable",
+            "description": "Flutter channel"
+        },
+        "version": {
+            "type": "string",
+            "default": "3.3.9",
+            "description": "Flutter version"
         }
     }
 }
