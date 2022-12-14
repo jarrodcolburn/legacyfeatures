@@ -22,7 +22,6 @@
             "args": [
                 "build",
                 "--workspace-folder=debug",
-                "--name=flutter"
             ],
         },
         {
