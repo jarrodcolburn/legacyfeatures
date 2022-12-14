@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "description": "Install the Flutter SDK",
     "containerEnv": {
+        "FLUTTER_HOME" : "/usr/local/flutter",
         "FLUTTER_ROOT": "/usr/local/flutter",
         "PATH": "/usr/local/flutter/bin:${PATH}"
     },
