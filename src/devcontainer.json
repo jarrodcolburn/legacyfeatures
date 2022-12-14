@@ -1,0 +1,16 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Dart-Code.flutter",
+                "Dart-Code.dart-code"
+                // "mads-hartmann.bash-ide-vscode"
+            ]
+        }
+    },
+    "features": {
+        "./flutter": {}
+    },
+    "postCreateCommand": "echo DONE"
+}
