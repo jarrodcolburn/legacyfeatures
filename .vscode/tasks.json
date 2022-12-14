@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Devcontainer: package features",
+            "type": "shell",
+            "command": "Devcontainer: package features",
+            "args": [
+                "features",
+                "package",
+                "src",
+                "--force-clean-output-folder"
+            ],
+            "detail": "Package Features",
+        },
+        {
+            "label": "Devcontainer: build",
+            "type": "shell",
+            "command": "devcontainer",
+            "args": [
+                "build",
+                "--workspace-folder=debug",
+                "--name=flutter"
+            ],
+        },
+        {
+            "label": "Devcontainer: up",
+            "type": "shell",
+            "command": "devcontainer",
+            "args": [
+                "up",
+                "--workspace-folder=debug",
+            ],
+        },
+        {
+            "label": "Create debug",
+            "type" : "shell",
+            "command": "mkdir -p debug && ln -sr src debug/.devcontainer"
+        }
+    ]
+}
